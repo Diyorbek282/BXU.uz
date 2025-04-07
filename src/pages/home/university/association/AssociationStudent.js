@@ -1,7 +1,7 @@
 import React from "react";
 import Hearder from "../../../header2/Header";
 import Footer from "../../../footer/Footer";
-import img1 from "./image.png";
+import img1 from "./image.jpg";
 
 function AssociationStudent() {
   return (
@@ -9,6 +9,20 @@ function AssociationStudent() {
       <Hearder />
 
       <main className="flex-grow container mx-auto px-4 py-8 mt-14 max-w-6xl">
+        {/* LEADER PROFILE */}
+        <div className="text-center mb-8 p-6 rounded-lg">
+            <h1 className="text-3xl md:text-4xl font-bold text-blue-800 mb-6">
+              O'zbekiston yoshlar ittifoqi
+            </h1>
+            <div className="flex justify-center mb-4">
+              <img
+                src={img1}
+                alt="O'zbekiston yoshlar ittifoqi"
+                className="object-cover rounded-xl border-4 h-[400px] border-blue-200"
+              />
+            </div>
+           
+          </div>
         {/* Header Section */}
         <div className="text-center mb-10">
           <h1 className="text-3xl md:text-4xl font-bold text-blue-800 mb-2">
@@ -361,74 +375,7 @@ function AssociationStudent() {
             </ul>
           </div>
 
-          {/* LEADER PROFILE */}
-          <div className="text-center mb-8 p-6 bg-blue-50 rounded-lg">
-            <h2 className="text-2xl font-bold text-blue-800 mb-6">
-              O'zbekiston yoshlar ittifoqi
-            </h2>
-            <div className="flex justify-center mb-4">
-              <img
-                src={img1}
-                alt="O'zbekiston yoshlar ittifoqi"
-                className="object-cover rounded-xl border-4 border-blue-200"
-              />
-            </div>
-            <h3 className="text-xl md:text-2xl font-bold text-blue-700 mb-2">
-              ERGASHEV OMONILLO LUTFILLO O'G'LI
-            </h3>
-            <h5 className="text-lg text-gray-600 mb-6">
-              Universitet "O'zbekiston yoshlar ittifoqi" BT yetakchisi
-            </h5>
-
-            <h3 className="text-xl font-semibold text-blue-700 mb-4">
-              O'ZBEKISTON YOSHLAR ITTIFOQINING ANDIJON DAVLAT UNIVERSITETIDAGI
-              BOSHLANG'ICH TASHKILOTINING MAQSAD VA VAZIFALARI
-            </h3>
-            <p className="text-gray-700 mb-6 leading-relaxed">
-              Boshlang'ich tashkilotning asosiy maqsadi, ta'lim muassasalarida
-              yoshlarning ta'lim-tarbiya olishi uchun munosib sharoit yaratib
-              berishga ko'maklashish, yoshlarning huquq va manfaatlarini himoya
-              qilish hamda har tomonlama barkamol shaxslar bo'lib yetishishiga
-              munosib hissa qo'shishdan iborat.
-            </p>
-
-            <h3 className="text-xl font-semibold text-blue-700 mb-4">
-              Boshlang'ich tashkilot o'z oldiga quyidagi vazifalarni qo'yadi:
-            </h3>
-            <ul className="space-y-3 list-disc pl-5 text-gray-700">
-              <li className="leading-relaxed">
-                yosh avlodni ona Vatanga muxabbat va sadoqat ruhida tarbiyalash,
-                ularning ongiga milliy istiqlol g'oyasi, milliy qadriyatlar,
-                diniy bag'rikenglik, millatlararo totuvlik va oilaviy
-                qadriyatlarni chuqur singdirish;
-              </li>
-              <li className="leading-relaxed">
-                yoshlarga O'zbekiston Respublikasi Konstitutsiyasi va
-                qonunlarida belgilangan fuqarolik huquq va burchlarini
-                anglatish, ularga mamlakatda amalga oshirilayotgan demokratik va
-                huquqiy islohotlarni mazmun-mohiyatini tushuntirish
-              </li>
-              <li className="leading-relaxed">
-                oliy ta'lim muassasasi yoshlarining muammolari, ta'lim sifati,
-                fanlarni o'zlashtirish darajasi, davomati, darsliklar va
-                kutubxonadan foydalanish darajasini o'rganib borish, yoshlar
-                murojaatlarini ko'rib chiqish va hal etishga ko'maklashish;
-              </li>
-              <li className="leading-relaxed">
-                yoshlarning chuqur bilim olishi, chet tillarini o'rganishi va
-                zamonaviy axborot kommunikatsiya texnologiyalarini puxta
-                egallashi hamda ularni kasb-hunarga yo'naltirishga qaratilgan
-                chora tadbirlarni amalga oshirish;
-              </li>
-              <li className="leading-relaxed">
-                iste'dodli yoshlarni kashf etish, ularni har tomonlama
-                qo'llab-quvvatlash va rag'batlantirishga qaratilgan ishlarni
-                amalga oshirish, intellektual va ijodiy qobilyatlarini
-                rivojlantirishga ko'maklashadigan klub va to'garaklar
-                faolivatini tashkil etish
-              </li>
-            </ul>
-          </div>
+          
         </div>
       </main>
 

@@ -80,6 +80,8 @@ import Classrooms from "./pages/home/university/classrooms/Classrooms";
 import Dormitory from "./pages/home/university/dormitory/Dormitory";
 import AssociationStudent from "./pages/home/university/association/AssociationStudent";
 import Support from "./pages/home/university/support/Support";
+import Distance from "./pages/home/university/distance/Distance";
+import EcoZone from "./pages/home/university/ecozone/EcoZone";
 
 function App() {
   const { t } = useTranslation();
@@ -163,7 +165,10 @@ function App() {
         <Route path={"/university/rector"} element={<RectorUniversity />} />
         <Route path={"/university/numbers"} element={<StatisticUniversity />} />
         <Route path={"/university/contact"} element={<ContactUsUniversity />} />
-        <Route path={"/university/association"} element={<AssociationStudent />} />
+        <Route
+          path={"/university/association"}
+          element={<AssociationStudent />}
+        />
         <Route path={"/university/support"} element={<Support />} />
         <Route
           path={"/university/prorector"}
@@ -194,6 +199,8 @@ function App() {
         />
         <Route path={"/university/classrooms"} element={<Classrooms />} />
         <Route path={"/university/dormitory"} element={<Dormitory />} />
+        <Route path={"/university/distance"} element={<Distance />} />
+        <Route path={"/university/ecozone"} element={<EcoZone />} />
 
         {/*  app admins */}
 

@@ -165,10 +165,10 @@ function RectorUniversity(props) {
                                                     <p className={"text-[18px] mt-4"}>
                                                         1985-1987-yillarda Moskvadagi Umumiy va pedagogik
                                                         psixologiya institutining ilmiy tadqiqotchisi, 1987-1990-yillarda
-                                                        shu institutning aspiranturasida oʼqib, 1990 yilda nomzodlik
+                                                        shu institutning aspiranturasida oʼqib, 1990-yilda nomzodlik
                                                         dissertatsiyasini himoya qilgan
                                                         1991-2021-yillarda Buxoro davlat universitetida
-                                                        Psixologiya kafedrasi oʼqituvchisi, kafedra mudiri, fakulьtet
+                                                        Psixologiya kafedrasi oʼqituvchisi, kafedra mudiri, fakultet
                                                         dekani, ilmiy ishlar prorektori lavozimlarida samarali faoliyat
                                                         koʼrsatgan. Shu orada bir muddat (2002-2006 y.y) viloyat
                                                         hokimining tavsiyasiga koʼra, Respublika Maʼnaviyat va maʼrifat

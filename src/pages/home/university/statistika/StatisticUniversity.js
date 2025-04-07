@@ -56,7 +56,7 @@ function StatisticUniversity() {
             Raqamlar va faktlar
           </h1>
           <h4 className="text-lg md:text-xl font-normal text-[#1e3258] mb-8">
-            Buxoro shahridagi Bxu universiteti - bu …
+            Buxoro shahridagi BXU universiteti - bu …
           </h4>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">

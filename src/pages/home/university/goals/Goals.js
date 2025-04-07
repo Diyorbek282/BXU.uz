@@ -35,10 +35,10 @@ function Goals() {
               <div className="bg-white p-8 rounded-2xl shadow-lg mb-8 transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                 <div className="mb-6">
                   <h1 className="text-2xl font-bold text-blue-800 mb-4 border-b-2 border-blue-100 pb-2">
-                    Bizning Maqsadlarimiz
+                    Bizning maqsadlarimiz
                   </h1>
                   <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                    Maqsadimiz – zamonaviy dunyoning rivojlanishiga mos keladigan, bilimdon,
+                    Maqsadimiz - zamonaviy dunyoning rivojlanishiga mos keladigan, bilimdon,
                     barkamol, ijodiy va ma'naviy jihatdan mustahkam yoshlarni tarbiyalash,
                     ularni kelajakda mamlakatimiz va jahon rivojida faol ishtirok etadigan
                     mutaxassislar sifatida shakllantirish.

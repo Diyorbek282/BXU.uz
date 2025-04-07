@@ -552,6 +552,7 @@ const resources = {
                     publicOffer: "Ommaviy oferta",
                     sponsorship: "Homiylik",
                     researchCenters: "Kutubxona",
+                    ecozone: "Yashil universitet"
 
                 },
                 symbols: {
