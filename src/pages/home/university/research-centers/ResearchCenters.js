@@ -4,8 +4,10 @@ import Footer from "../../../footer/Footer";
 import img1 from "./image1.png";
 import img2 from "./image.png";
 import { FaBook, FaQrcode, FaGraduationCap, FaTrophy } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 function ResearchCenters() {
+  const {t} = useTranslation();
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
       <Headers />
@@ -17,10 +19,10 @@ function ResearchCenters() {
             <div className="absolute -bottom-6 -right-6 w-16 h-16 bg-blue-100 rounded-full opacity-50"></div>
 
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-blue-800 mb-4 relative z-10">
-              BUXORO XALQARO UNIVERSITETINING
+              {t("researchcenters.content")}
             </h1>
             <h3 className="text-xl md:text-2xl text-blue-600 mb-2 relative z-10">
-              Axborot-Resurs markazi
+              {t("researchcenters.content1")}
             </h3>
             <div className="w-24 h-1 bg-blue-500 mx-auto mt-4 rounded-full"></div>
           </div>
@@ -33,12 +35,11 @@ function ResearchCenters() {
                   <FaBook className="text-blue-600 text-xl" />
                 </div>
                 <h4 className="text-lg font-semibold text-gray-800">
-                  Milliy kutubxona bilan hamkorlik
+                  {t("researchcenters.content2")}
                 </h4>
               </div>
               <p className="text-gray-600">
-                Professor-o'qituvchilar va talabalar elektron adabiyotlardan
-                bemalol foydalanish imkoniyati
+                {t("researchcenters.content3")}
               </p>
             </div>
 
@@ -48,12 +49,11 @@ function ResearchCenters() {
                   <FaQrcode className="text-green-600 text-xl" />
                 </div>
                 <h4 className="text-lg font-semibold text-gray-800">
-                  Zamonaviy resurslar
+                  {t("researchcenters.content4")}
                 </h4>
               </div>
               <p className="text-gray-600">
-                Bosma, elektron hamda QR-kodli barcha yo'nalishlar uchun o'quv
-                adabiyotlar
+                {t("researchcenters.content5")}
               </p>
             </div>
           </div>
@@ -61,33 +61,33 @@ function ResearchCenters() {
           {/* Detailed List */}
           <div className="mb-12">
             <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">
-              Markaz imkoniyatlari
+              {t("researchcenters.content6")}
             </h2>
             <ul className="space-y-4">
               {[
                 {
                   icon: <FaBook className="text-blue-500" />,
-                  title: "Milliy kutubxona hamkorligi",
+                  title: t("researchcenters.content7"),
                   content:
-                    "Alisher Navoiy nomidagi O'zbekiston Milliy kutubxonasi bilan shartnoma imzolangan.",
+                    t("researchcenters.content8"),
                 },
                 {
                   icon: <FaQrcode className="text-green-500" />,
-                  title: "Zamonaviy resurslar",
+                  title: t("researchcenters.content9"),
                   content:
-                    "Bosma, elektron hamda QR-kodli o'quv adabiyotlar mavjud.",
+                    t("researchcenters.content10"),
                 },
                 {
                   icon: <FaGraduationCap className="text-purple-500" />,
-                  title: "Keng fond",
+                  title: t("researchcenters.content11"),
                   content:
-                    "Dissertatsiyalar, badiiy adabiyotlar, o'quv qo'llanma va darsliklar.",
+                    t("researchcenters.content12"),
                 },
                 {
                   icon: <FaTrophy className="text-yellow-500" />,
-                  title: "Kitobxonlar uchun musobaqalar",
+                  title: t("researchcenters.content13"),
                   content:
-                    "Har chorakda \"Eng yaxshi kitobxon\" nominatsiyasi bo'yicha musobaqalar o'tkaziladi.",
+                    t("researchcenters.content14"),
                 },
               ].map((item, index) => (
                 <li
@@ -113,7 +113,7 @@ function ResearchCenters() {
           {/* Image Gallery */}
           <div className="mb-12">
             <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">
-              Markaz fotolari
+              {t("researchcenters.content15")}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="relative group overflow-hidden rounded-xl shadow-lg">
@@ -124,7 +124,7 @@ function ResearchCenters() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                   <span className="text-white font-medium">
-                    Axborot-resurs markazi interyeri
+                    {t("researchcenters.content16")}
                   </span>
                 </div>
               </div>
@@ -136,7 +136,7 @@ function ResearchCenters() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                   <span className="text-white font-medium">
-                    Talabalar uchun ish joylari
+                    {t("researchcenters.content17")}
                   </span>
                 </div>
               </div>

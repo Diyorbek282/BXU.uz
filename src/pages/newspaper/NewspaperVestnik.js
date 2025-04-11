@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import Header from "../header/Header";
+import Header from "../header2/Header";
 import Footer from "../footer/Footer";
 import bgImage from "../../images/header2.jpg";
 import down from "./images/img.png";

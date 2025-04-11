@@ -41,9 +41,7 @@ function AboutUniversity(props) {
       >
         <Header />
         <div className="header_title absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white drop-shadow-lg">
-
-          </h2>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white drop-shadow-lg"></h2>
         </div>
       </div>
 
@@ -52,24 +50,16 @@ function AboutUniversity(props) {
           {/* Main Content (2/3 width) */}
           <div className="w-full xl:w-2/3 p-4 space-y-6">
             <h1 className="text-3xl font-semibold text-blue-800 border-b-2 border-blue-200 pb-2">
-              BUXORO XALQARO UNIVERSITETI HAQIDA QISQACHA MA`LUMOT
+              {t("aboutUniversity.title")}
             </h1>
 
             <div className="bg-white p-6 rounded-xl shadow-md">
               <p className="text-lg leading-relaxed text-gray-700">
-                Prezidentimiz SH.M. Mirziyoyevning 2021 - yil 21-22 yanvar
-                kunlari Buxoro viloyatiga tashrifi davomida va Xalq deputatlari
-                viloyat Kengashining navbatdagi tashqari sessiyasida bergan
-                topshiriqlari bo'yicha 4 - sonli bayonining 98 - bandiga asosan
-                tashkil etilgan.
+                {t("aboutUniversity.description1")}
               </p>
 
               <p className="text-lg leading-relaxed text-gray-700 mt-4">
-                Oliygoximizda bugungi kunda 3 ta kampus umumiy hisobda 6000
-                o`rinli o`quv binosi hamda 420 o`rinli talabalar yotoqxonasi
-                mavjud. Bizda jami 16 ta bakalavr, 8 ta magistratura hamda 6 ta
-                ta`lim shakli bo`yicha DOKTORANTURA (Psixologiya, Filologiya,
-                Pedagogika fanlari bo'yicha) mavjud.
+                {t("aboutUniversity.description2")}
               </p>
             </div>
 
@@ -96,11 +86,7 @@ function AboutUniversity(props) {
 
             <div className="bg-blue-50 p-6 rounded-xl border-l-4 border-blue-500">
               <h5 className="text-lg font-medium text-gray-800">
-                2021 yildan buyon "Raqamli ta'lim texnologiyalarini
-                rivojlantirish markazi" bilan tuzilgan shartnoma asosan
-                talabalarimiz hisoboti "HEMIS" platformasida olib boriladi.
-                Hozir kunda 3 marotaba Magistratuta ta`limy o`nalishini bitirgan
-                talabalarga diplomlar taqdim etildi.
+                {t("aboutUniversity.description3")}
               </h5>
             </div>
 
@@ -113,17 +99,7 @@ function AboutUniversity(props) {
 
             <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-xl shadow-sm">
               <h5 className="text-lg font-medium text-gray-800">
-                Oliygohimiz 4 yil davomida yuqori natijalarga ya'ni talabalar
-                soni oshganligi, o'quv binolari ko'payganligi, talim sifati
-                jahon talablariga javob bera olishi, ilmiy salohiyat 69 % ga
-                yetganligi, ta'lim yo'nalishlar soni 24 ga yetganligi, oliy
-                ta'limdan keyingi ta'lim xizmatlarini ko'rsatish uchun
-                litsenziyaga ega bo'lganligi psixologiya bo'yicha ilmiy kengash
-                tashkil qilinganligi, xalqaro ilmiy jurnallar muallifligini
-                qo'lga kiritganligi tufayli 2025 yilning 28 mart kunidan boshlab
-                oliygoh nomi BUXORO XALQARO UNIVERSITETI nomiga O'zbekiston
-                Respublikasi Vazirlar Mahkamasining tegishli litsenziyasiga
-                asosan o'zgartirildi.
+                {t("aboutUniversity.description4")}
               </h5>
             </div>
 

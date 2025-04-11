@@ -2,21 +2,24 @@ import React, { useState, useEffect } from "react";
 import Headers from "../../../header2/Header";
 import { useInView } from "react-intersection-observer";
 import Footer from "../../../footer/Footer";
+import { useTranslation } from "react-i18next";
 
 function StatisticUniversity() {
-  const stats = [
-    { value: 1, label: " FAKULTETLARI", color: "text-blue-600" },
-    { value: 237, label: "BITIRUVCHILAR", color: "text-green-600" },
-    { value: 1937, label: "BAKALAVRIAT TALABALARI", color: "text-yellow-600" },
-    { value: 146, label: "MAHALLIY PROFESSOR-O'QITUVCHILAR", color: "text-red-600" },
-    { value: 374, label: "MAGISTRATURA TALABALARI", color: "text-pink-600" },
-    { value: 2, label: "TALABALAR TURAR JOYI", color: "text-indigo-600" },
-    { value: 4, label: "O'QUV BINOLARI", color: "text-teal-600" },
-    { value: 128, label: "BXU TAYYORLOV KURSLARI TINGLOVCHILARI", color: "text-orange-600" },
-    { value: 2, label: "XORIJIY PROFESSOR-O'QITUVCHILAR", color: "text-cyan-600" },
-    { value: 26, label: "BXU TAYYORLOV KURSLARI O'QITUVCHILARI", color: "text-lime-600" },
-    { value: 3, label: "BXU Mikroavtobuslar", color: "text-black" },
+  const { t } = useTranslation();
+  const stats = [ 
+    { value: 1, label: t("statistics.text1"), color: "text-blue-600" },
+    { value: 237, label: t("statistics.text2"), color: "text-green-600" },
+    { value: 1937, label: t("statistics.text3"), color: "text-yellow-600" },
+    { value: 146, label: t("statistics.text4"), color: "text-red-600" },
+    { value: 374, label: t("statistics.text5"), color: "text-pink-600" },
+    { value: 2, label: t("statistics.text6"), color: "text-indigo-600" },
+    { value: 4, label: t("statistics.text7"), color: "text-teal-600" },
+    { value: 128, label: t("statistics.text8"), color: "text-orange-600" },
+    { value: 2, label: t("statistics.text9"), color: "text-cyan-600" },
+    { value: 26, label: t("statistics.text10"), color: "text-lime-600" },
+    { value: 3, label: t("statistics.text11"), color: "text-black" },
   ];
+  
 
   const [counters, setCounters] = useState(stats.map(() => 0));
   const [ref, inView] = useInView({
@@ -53,10 +56,10 @@ function StatisticUniversity() {
         <Headers />
         <div className="max-w-7xl pt-20 md:py-14 mx-auto px-4 mt-8" ref={ref}>
           <h1 className="text-3xl md:text-4xl font-bold border-b-2 pb-4 text-[#1e3258] mb-2">
-            Raqamlar va faktlar
+            {t("university.about.facts")}
           </h1>
           <h4 className="text-lg md:text-xl font-normal text-[#1e3258] mb-8">
-            Buxoro shahridagi BXU universiteti - bu …
+            {t("statistics.title")}
           </h4>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">

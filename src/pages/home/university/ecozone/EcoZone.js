@@ -9,8 +9,9 @@ import img5 from "./img/photo_6_2025-04-07_20-09-07.jpg";
 import img6 from "./img/photo_7_2025-04-07_20-09-07.jpg";
 import img7 from "./img/photo_5_2025-04-07_20-09-07.jpg";
 import img8 from "./img/photo_2025-04-07_20-33-36.jpg";
-import img9 from "./img/photo_2_2025-04-07_20-09-07.jpg";
+import img9 from "./img/img8.jpg";
 import img10 from "./img/photo_3_2025-04-07_20-09-07.jpg";
+import { useTranslation } from "react-i18next";
 
 import {
   PieChart,
@@ -28,9 +29,11 @@ import {
 import { TreeIcon } from "./TreeIcons";
 
 const TreeStatistics = () => {
+  const { t } = useTranslation();
+
   const data = [
     {
-      name: "Gilos",
+      name: t("ecozone.cherry"),
       value: 18,
       color: "#98FB98",
       icon: "gilos",
@@ -38,7 +41,7 @@ const TreeStatistics = () => {
       image: img1,
     },
     {
-      name: "Olma",
+      name: t("ecozone.apple"),
       value: 15,
       color: "#66CDAA",
       icon: "olma",
@@ -46,7 +49,7 @@ const TreeStatistics = () => {
       image: img2,
     },
     {
-      name: "Orik",
+      name: t("ecozone.apricot"),
       value: 12,
       color: "#32CD32",
       icon: "urik",
@@ -54,7 +57,7 @@ const TreeStatistics = () => {
       image: img3,
     },
     {
-      name: "Shaftoli",
+      name: t("ecozone.peach"),
       value: 13,
       color: "#00FA9A",
       icon: "shaftoli",
@@ -62,7 +65,7 @@ const TreeStatistics = () => {
       image: img4,
     },
     {
-      name: "Nok",
+      name: t("ecozone.pear"),
       value: 5,
       color: "#7CFC00",
       icon: "nok",
@@ -70,7 +73,7 @@ const TreeStatistics = () => {
       image: img5,
     },
     {
-      name: "Archa",
+      name: t("ecozone.juniper"),
       value: 22,
       color: "#228B22",
       icon: "archazor",
@@ -78,7 +81,6 @@ const TreeStatistics = () => {
       image: img6,
     },
   ];
-
   const total = data.reduce((sum, item) => sum + item.value, 0);
   const sortedData = [...data].sort((a, b) => b.value - a.value);
 
@@ -124,11 +126,10 @@ const TreeStatistics = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center my-12">
             <h1 className="text-3xl md:text-4xl font-bold text-green-800 mb-3">
-              Buxoro Davlat Universiteti Yashil Makon Daraxtlari
+              {t("ecozone.text")}
             </h1>
             <p className="text-lg md:text-xl text-green-600 max-w-3xl mx-auto">
-              Ekilgan daraxt turlari va ularning taqsimoti bo'yicha statistik
-              ma'lumotlar
+              {t("ecozone.text1")}
             </p>
           </div>
 
@@ -136,7 +137,7 @@ const TreeStatistics = () => {
           <div className="mb-12">
             <h2 className="text-2xl font-semibold text-green-700 mb-6 flex items-center gap-2">
               <TreeIcon type="list" className="text-green-600" />
-              Universitet hududidagi daraxtlar
+              {t("ecozone.text2")}
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {[
@@ -168,25 +169,25 @@ const TreeStatistics = () => {
           {/* Stat Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
             <StatCard
-              title="Jami ko'chatlar"
+              title={t("ecozone.text3")}
               value={total.toLocaleString()}
               icon="🌳"
               color="bg-green-100 text-green-800 hover:bg-green-200"
             />
             <StatCard
-              title="CO₂ yutilishi"
-              value="650 tonna/yil"
+              title={t("ecozone.text4")}
+              value={t("ecozone.text5")}
               icon="🌍"
               color="bg-teal-100 text-teal-800 hover:bg-teal-200"
             />
             <StatCard
-              title="Havo tozalash"
-              value="3,500 m³/kun"
-              icon="💨"
+              title={t("ecozone.text6")}
+              value={t("ecozone.text7")}
+              icon="🍃"
               color="bg-blue-100 text-blue-800 hover:bg-blue-200"
             />
             <StatCard
-              title="Daraxt turlari"
+              title={t("ecozone.text8")}
               value={data.length}
               icon="🌲"
               color="bg-emerald-100 text-emerald-800 hover:bg-emerald-200"
@@ -292,17 +293,17 @@ const TreeStatistics = () => {
             <div className="p-6">
               <h2 className="text-2xl font-semibold text-green-700 mb-6 flex items-center gap-2">
                 <TreeIcon type="list" className="text-green-600" />
-                Barcha daraxt turlari bo'yicha batafsil ma'lumot
+                {t("ecozone.text9")}
               </h2>
               <div className="overflow-x-auto">
                 <table className="min-w-full divide-y divide-green-200">
                   <thead className="bg-gradient-to-r from-green-600 to-emerald-700">
                     <tr>
-                      <TableHeader>Daraxt turi</TableHeader>
-                      <TableHeader>Soni</TableHeader>
-                      <TableHeader>Foiz</TableHeader>
-                      <TableHeader>Rasm</TableHeader>
-                      <TableHeader>Grafik</TableHeader>
+                      <TableHeader>{t("ecozone.text10")}</TableHeader>
+                      <TableHeader>{t("ecozone.text11")}</TableHeader>
+                      <TableHeader>{t("ecozone.text12")}</TableHeader>
+                      <TableHeader>{t("ecozone.text13")}</TableHeader>
+                      <TableHeader>{t("ecozone.text14")}</TableHeader>
                     </tr>
                   </thead>
                   <tbody className="bg-white divide-y divide-green-200">
@@ -318,7 +319,8 @@ const TreeStatistics = () => {
                           </span>
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap text-green-800">
-                          {item.value.toLocaleString()} ta
+                          {item.value.toLocaleString()}
+                          {t("ecozone.text22")}
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap">
                           <div className="flex items-center">
@@ -369,22 +371,22 @@ const TreeStatistics = () => {
           {/* Environmental Impact Section */}
           <div className="mt-10 bg-gradient-to-r from-green-600 to-emerald-700 rounded-xl shadow-lg p-8 text-white transition-all duration-300 hover:shadow-xl">
             <h2 className="text-2xl font-semibold mb-6 flex items-center gap-2">
-              🌱 Ekologik Ta'sir
+              🌱 {t("ecozone.text15")}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <ImpactCard
-                title="Iqlim o'zgarishiga qarshi kurash"
-                description="Daraxtlar yiliga 650 tonna CO₂ ni yutadi"
+                title={t("ecozone.text16")}
+                description={t("ecozone.text17")}
                 icon="🌳"
               />
               <ImpactCard
-                title="Havoni tozalash"
-                description="Kuniga 3,500 m³ toza havo ishlab chiqaradi"
-                icon="💨"
+                title={t("ecozone.text18")}
+                description={t("ecozone.text19")}
+                icon="🍃"
               />
               <ImpactCard
-                title="Biodiversitetni qo'llab-quvvatlash"
-                description="10+ turdagi qushlar va hasharotlar uchun yashash muhiti"
+                title={t("ecozone.text20")}
+                description={t("ecozone.text21")}
                 icon="🦋"
               />
             </div>

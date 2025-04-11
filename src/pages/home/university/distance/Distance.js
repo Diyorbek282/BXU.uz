@@ -1,8 +1,9 @@
 import React from "react";
 import Header from "../../../header2/Header";
 import Footer from "../../../footer/Footer";
-
+import { useTranslation } from "react-i18next";
 function Distance() {
+  const { t } = useTranslation();
   return (
     <div>
       <Header />
@@ -10,77 +11,71 @@ function Distance() {
         <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-md overflow-hidden mt-14">
           <div className="p-6 md:p-8">
             <h1 className="text-3xl md:text-4xl font-bold text-center text-blue-800 mb-6">
-              Masofaviy Ta'lim Tizimi
+              {t("distance.title")}
             </h1>
 
             <div className="mb-8">
               <h2 className="text-2xl font-semibold text-blue-700 mb-4">
-                Buxoro Xalqaro Universitetida Masofaviy Ta'lim
+                {t("distance.description1")}
               </h2>
               <p className="text-lg mb-4">
-                Buxoro Xalqaro Universitetida bugungi kunda zamon talablariga
-                ko'ra masofaviy ta'lim ham yo'lga qo'yilgan. Bu esa korxona va
-                tashkilotlarda ishlaydigan talabgorlar uchun juda ham qulay.
+                {t("distance.description2")}
               </p>
               <p className="text-lg mb-4">
-                Masofaviy ta'lim bo'yicha universitetda barcha shart-sharoitlar
-                yaratilgan bo'lib, qolaversa professor-o'qituvchilarning
-                videoyozuv darslari juda yuqori sifatda olingan.
+                {t("distance.description3")}
               </p>
             </div>
 
             <div className="mb-8">
               <h2 className="text-2xl font-semibold text-blue-700 mb-4">
-                Mavjud Masofaviy Ta'lim Yo'nalishlari
+                {t("distance.list_head")}
               </h2>
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 text-lg">
                 <li className="flex items-start">
                   <span className="text-blue-600 mr-2">•</span>
-                  Milliy g'oya, ma'naviyat asoslari va huquq ta'limi
+                  {t("distance.list_body1")}
                 </li>
                 <li className="flex items-start">
                   <span className="text-blue-600 mr-2">•</span>
-                  Psixologiya
+                  {t("distance.list_body2")}
                 </li>
                 <li className="flex items-start">
                   <span className="text-blue-600 mr-2">•</span>
-                  Iqtisodiyot
+                  {t("distance.list_body3")}
                 </li>
                 <li className="flex items-start">
                   <span className="text-blue-600 mr-2">•</span>
-                  Boshlang'ich ta'lim
+                  {t("distance.list_body4")}
                 </li>
                 <li className="flex items-start">
                   <span className="text-blue-600 mr-2">•</span>
-                  Maktabgacha ta'lim
+                  {t("distance.list_body5")}
                 </li>
                 <li className="flex items-start">
                   <span className="text-blue-600 mr-2">•</span>
-                  O'zbek tili va adabiyoti
+                  {t("distance.list_body6")}
                 </li>
                 <li className="flex items-start">
                   <span className="text-blue-600 mr-2">•</span>
-                  Logistika (transport va boshqa sohalar bo'yicha)
+                  {t("distance.list_body7")}
                 </li>
                 <li className="flex items-start">
                   <span className="text-blue-600 mr-2">•</span>
-                  Ona tili va adabiyoti
+                  {t("distance.list_body8")}
                 </li>
                 <li className="flex items-start">
                   <span className="text-blue-600 mr-2">•</span>
-                  Matematika
+                  {t("distance.list_body9")}
                 </li>
               </ul>
             </div>
 
             <div className="bg-blue-50 p-4 rounded-lg">
               <h3 className="text-xl font-semibold text-blue-800 mb-2">
-                Qo'shimcha ma'lumot:
+                {t("distance.body1")}
               </h3>
               <p className="text-blue-900">
-                Masofaviy ta'lim dasturiga yozilish uchun universitetning rasmiy
-                veb-sayti yoki talabalar ishlari bo'limiga murojaat qilishingiz
-                mumkin.
+                {t("distance.body2")}
               </p>
             </div>
           </div>

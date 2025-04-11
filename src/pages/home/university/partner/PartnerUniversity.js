@@ -39,6 +39,10 @@ import img22 from "./img/4.jpg";
 import img23 from "./img/5.jpg";
 import img24 from "./img/6.jpg";
 import img25 from "./img/7.jpg";
+import img26 from "./img/11.png";
+import img27 from "./img/22.png";
+import img28 from "./img/33.png";
+import img29 from "./img/44.png";
 
 function PartnerUniversity(props) {
   const { t } = useTranslation();
@@ -59,11 +63,11 @@ function PartnerUniversity(props) {
 
   // Image gallery data
   const galleryImages = [
-    { id: 1, src: img1, title: "Memorandum imzolash marosimi 2023" },
-    { id: 2, src: img2, title: "Universitetlar hamkorligi shartnomasi" },
-    { id: 3, src: img3, title: "Xalqaro hamkorlik" },
-    { id: 4, src: img4, title: "Ta'lim almashinuvi dasturi" },
-    { id: 5, src: img5, title: "Akademik hamkorlik shartnomasi" },
+    { id: 1, src: img1, title: t("partneruniversity.text") },
+    { id: 2, src: img2, title: t("partneruniversity.text1") },
+    { id: 3, src: img3, title: t("partneruniversity.text2") },
+    { id: 4, src: img4, title: t("partneruniversity.text3") },
+    { id: 5, src: img5, title: t("partneruniversity.text4") },
   ];
 
   useEffect(() => {
@@ -140,30 +144,20 @@ function PartnerUniversity(props) {
             {/* Main Content (2/3 width) */}
             <div className="w-full xl:w-2/3 mt-16">
               {/* Buxoro Conference */}
-              <div className="mb-12 px-4">
+              <div className="my-12 px-4">
                 <h1 className="text-3xl md:text-4xl font-bold text-center mb-8 text-blue-600">
-                  Xalqaro Konferensiya 2025
+                  {t("partneruniversity.title")}
                 </h1>
                 <div className="bg-white p-6 rounded-lg shadow-md">
                   <h2 className="text-2xl font-semibold mb-4 text-center text-blue-800">
-                    Buxoro psixologiya va xorijiy tillar instituti tomonidan
-                    2025 yilning 16-mart kuni "PSIXOLOGIYA FANLARI BO'YICHA
-                    XALQARO KONFRENSIYA" bo'lib o'tdi.
+                    {t("partneruniversity.text5")}
                   </h2>
 
                   <p className="text-lg mb-4">
-                    Ushbu konfrensiyada O'zbekiston Respublikasida faoliyat olib
-                    borayotgan malakali mutaxasislar, ilmiy darajalarga ega
-                    bo'lgan professor-o'qituvchilar (DSc, PhD) o'z chiqishlarida
-                    Psixologiya fanida so'ngi ilmiy yangiliklar, takliflar va
-                    kelgusida dolzarb mavzular haqida ma'ruzalar o'qishdi.
+                    {t("partneruniversity.text6")}
                   </p>
                   <p className="text-lg mb-4">
-                    Konfrensiyada xorij olimlari ham o'z chiqishlarida,
-                    Psixologiya fanlari o'sishida O'zbekiston psixolog olimlari
-                    hissalari haqida, qolaversa xalqaro universitetlar bilan
-                    doimiy hamkorlik masalalari bo'yicha o'z takliflarini
-                    bildirishdi.
+                    {t("partneruniversity.text7")}
                   </p>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
                     <img
@@ -194,15 +188,13 @@ function PartnerUniversity(props) {
                   </div>
                 </div>
                 {/* Turkiya ankara */}
-                <div className="bg-white p-6 rounded-lg shadow-md">
+                <div className="mt-12 bg-white p-6 rounded-lg shadow-md">
                   <div className="mb-6 text-center">
                     <h2 className="text-2xl md:text-3xl font-bold text-blue-800 mb-2">
-                      Xalqaro Hamkorlik: Anqara Yildirim Boyazid Universiteti
-                      bilan
+                     {t("partneruniversity.text8")}
                     </h2>
                     <p className="text-lg text-gray-600">
-                      Turkiya va O'zbekiston universitetlari o'rtasidagi
-                      strategik hamkorlik
+                      {t("partneruniversity.text9")}
                     </p>
                   </div>
 
@@ -211,38 +203,32 @@ function PartnerUniversity(props) {
                     <div className="md:w-1/2">
                       <div className="mb-6">
                         <h3 className="text-xl font-semibold text-blue-700 mb-3">
-                          Professor Qosimov Ali Asqarxonning Tashrifi
+                          {t("partneruniversity.text10")}
                         </h3>
                         <p className="text-lg mb-4">
-                          Turkiyaning Anqara Yildirim Boyazid universiteti
-                          professori, xalqaro hamkorlik bo'yicha yetakchi
-                          mutaxassis Qosimov Ali Asqarxon Aslamxon o'g'li Buxoro
-                          xalqaro universitetiga tashrif buyurdi.
+                          {t("partneruniversity.text11")}
                         </p>
                         <p className="text-lg mb-4">
-                          Mehmon universitetimizda yaratilgan zamonaviy
-                          sharoitlar bilan tanishdi va "Psixologiya"
-                          magistratura mutaxassisligi talabalariga "Din
-                          psixologiyasi" mavzusida maxsus ma'ruza qildi.
+                          {t("partneruniversity.text12")}
                         </p>
                       </div>
 
                       <div className="bg-blue-50 p-4 rounded-lg">
                         <h3 className="text-xl font-semibold text-blue-800 mb-2">
-                          Imzolangan Kelishuvlar
+                          {t("partneruniversity.text13")}
                         </h3>
                         <ul className="space-y-2">
                           <li className="flex items-start">
                             <span className="text-blue-600 mr-2">•</span>
-                            Strategik hamkorlik memorandumi
+                           {t("partneruniversity.text14")}
                           </li>
                           <li className="flex items-start">
                             <span className="text-blue-600 mr-2">•</span>
-                            O'qituvchilar almashinuvi dasturi
+                            {t("partneruniversity.text15")}
                           </li>
                           <li className="flex items-start">
                             <span className="text-blue-600 mr-2">•</span>
-                            Qo'shma ilmiy tadqiqotlar olib borish
+                            {t("partneruniversity.text16")}
                           </li>
                         </ul>
                       </div>
@@ -258,7 +244,7 @@ function PartnerUniversity(props) {
                             className="w-full h-64 object-cover rounded-lg shadow-md"
                           />
                           <p className="text-sm text-gray-500 mt-1 text-center">
-                            Professor Qosimov talabalar bilan suhbat
+                            {t("partneruniversity.text17")}
                           </p>
                         </div>
                         <div>
@@ -295,47 +281,35 @@ function PartnerUniversity(props) {
 
                   <div className="mt-6 bg-green-50 p-4 rounded-lg">
                     <h3 className="text-lg font-semibold text-green-800 mb-2">
-                      Kelajakdagi Hamkorlik Rejalari
+                      {t("partneruniversity.text18")}
                     </h3>
                     <p className="text-gray-700">
-                      Ikki universitet o'rtasida qo'shma magistratura
-                      dasturlarini ishlab chiqish, xalqaro konferensiyalar
-                      tashkil etish va ilmiy jurnallar chop etish
-                      rejalashtirilmoqda.
+                      {t("partneruniversity.text19")}
                     </p>
                   </div>
                 </div>
               </div>
               {/* Conference Information Section */}
-              <div className="mb-12 px-4">
+              <div className="my-12 px-4">
                 <h1 className="text-3xl md:text-4xl font-bold text-center mb-8 text-blue-600">
-                  Xalqaro Konferensiya 2024
+                  {t("partneruniversity.text20")}
                 </h1>
 
                 <div className="bg-white p-6 rounded-lg shadow-md">
                   <p className="text-2xl font-semibold mb-4 text-center text-blue-800">
-                    2024 yilda Samarqand Davlat Universitetida nufuzli xalqaro
-                    konferensiya bo'lib o'tdi.
+                    {t("partneruniversity.text21")}
                   </p>
 
                   <p className="text-lg mb-4">
-                    Ushbu konferensiyada dunyoning 40 dan ortiq mamlakatlarining
-                    oliygohlaridan tashrif buyurgan psixolog olimlarining
-                    ma'ruzalari tinglandi.
+                    {t("partneruniversity.text22")}
                   </p>
 
                   <p className="text-lg mb-4">
-                    Ushbu ma'ruzalarda so'nggi yillarda psixologiya sohasidagi
-                    ilmiy yangiliklar, tajribalar, jurnallar va kitoblar haqida
-                    ma'lumotlar bilan bo'lishildi.
+                    {t("partneruniversity.text23")} 
                   </p>
 
                   <p className="text-lg mb-4">
-                    O'zbekistonlik psixolog olimlar ham konferensiyada ishtirok
-                    etishdi. Ushbu konferensiyadan ko'zlangan asosiy maqsad
-                    O'zbekistonda psixologiyaning rivojlanishi va jamiyatimizga
-                    yetuk mutaxassislar tayyorlash borasida bir nechta xalqaro
-                    memorandumlar imzolandi.
+                    {t("partneruniversity.text24")}
                   </p>
                   <img
                     src={img6}
@@ -345,22 +319,15 @@ function PartnerUniversity(props) {
                 </div>
 
                 {/* Turkia memorandum */}
-                <div className="bg-white p-6 rounded-lg shadow-md">
+                <div className="mt-12 bg-white p-6 rounded-lg shadow-md">
                   <h2 className="text-2xl font-semibold mb-4 text-center text-blue-800">
-                    BUXORO XALQARO UNIVERSITETI rektori boshchiligidagi
-                    delegatsiya Turkiyaning eng nufuzli oliy ta’lim muassasalari
-                    bilan xalqaro hamkorlik yo’llarini ochish bo’yicha xalqaro
-                    konferensiya bo'lib o'tdi.
+                    {t("partneruniversity.text25")}
                   </h2>
                   <p className="text-lg mb-4">
-                    Ushbu tashrifda bir necha xalqaro aloqalar yo’lga qo’yildi.
+                    {t("partneruniversity.text26")}
                   </p>
                   <p className="text-lg mb-4">
-                    Masalan Turkiyaning oliygohlarida BUXORO XALQARO
-                    UNIVERSITETI professor-o’qituvchilarinning malaka oshirish
-                    amaliyoti qolaversa Xalqaro kredit-modul talablariga ko’ra
-                    talaba almashinuvi va qo’shma dasturga oid loyihalar
-                    to’g’risida tegishli hujjatlar imzolandi.
+                    {t("partneruniversity.text27")}
                   </p>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
                     <img
@@ -394,20 +361,13 @@ function PartnerUniversity(props) {
                 {/* Kazak memorandum */}
                 <div className="bg-white p-6 rounded-lg shadow-md">
                   <h2 className="text-2xl font-semibold mb-4 text-center text-blue-800">
-                    BUXORO XALQARO UNIVERSITETI rektori boshchiligidagi
-                    delegatsiya Qozoqistonning eng nufuzli oliy ta’lim
-                    muassasalari bilan xalqaro hamkorlik yo’llarini ochish
-                    bo’yicha xalqaro konferensiya bo'lib o'tdi.
+                    {t("partneruniversity.text28")}
                   </h2>
                   <p className="text-lg mb-4">
-                    Ushbu tashrifda bir necha xalqaro aloqalar yo’lga qo’yildi.
+                    {t("partneruniversity.text29")}
                   </p>
                   <p className="text-lg mb-4">
-                    Masalan Qozoqistonning oliygohlarida BUXORO XALQARO
-                    UNIVERSITETI professor-o’qituvchilarinning malaka oshirish
-                    amaliyoti qolaversa Xalqaro kredit-modul talablariga ko’ra
-                    talaba almashinuvi va qo’shma dasturga oid loyihalar
-                    to’g’risida tegishli hujjatlar imzolandi.
+                    {t("partneruniversity.text30")}
                   </p>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
                     <img
@@ -429,13 +389,54 @@ function PartnerUniversity(props) {
                 </div>
               </div>
 
-              {/* Image Gallery Section */}
-              <div className="mb-12">
+              {/* russian conference */}
+              <div className="my-12 px-4">
                 <h1 className="text-3xl md:text-4xl font-bold text-center mb-8 text-blue-600">
-                  Memorandumlarimiz
+                  {t("partneruniversity.text31")}
+                </h1>
+                <div className="bg-white p-6 rounded-lg shadow-md">
+                  <h2 className="text-2xl font-semibold mb-4 text-center text-blue-800">
+                    {t("partneruniversity.text32")}
+                  </h2>
+
+                  <p className="text-lg mb-4">
+                    {t("partneruniversity.text33")}
+                  </p>
+                  <p className="text-lg mb-4">
+                    {t("partneruniversity.text34")}
+                  </p>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                    <img
+                      src={img29}
+                      alt="Buxoro Konferensiya 2025"
+                      className="w-full h-auto rounded-lg shadow-md"
+                    />
+                    <img
+                      src={img27}
+                      alt="Buxoro Konferensiya 2025"
+                      className="w-full h-auto rounded-lg shadow-md"
+                    />
+                    <img
+                      src={img28}
+                      alt="Buxoro Konferensiya 2025"
+                      className="w-full h-auto rounded-lg shadow-md"
+                    />
+                    <img
+                      src={img26}
+                      alt="Buxoro Konferensiya 2025"
+                      className="w-full h-auto rounded-lg shadow-md"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              {/* Image Gallery Section */}
+              <div className="my-12">
+                <h1 className="text-3xl md:text-4xl font-bold text-center mb-8 text-blue-600">
+                  {t("partneruniversity.text35")}
                 </h1>
                 <h2 className="text-2xl font-semibold text-center mb-6 text-gray-700">
-                  Hamkorlik fotolavhalari
+                  {t("partneruniversity.text36")} 
                 </h2>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
@@ -463,7 +464,7 @@ function PartnerUniversity(props) {
               {/* Documents Section */}
               <div className="mt-8">
                 <h2 className="text-2xl font-semibold text-center mb-6 text-gray-700">
-                  Memorandum hujjatlari
+                  {t("partneruniversity.text37")}
                 </h2>
 
                 <div className="flex flex-wrap justify-center">
@@ -498,7 +499,7 @@ function PartnerUniversity(props) {
                               alt="Download icon"
                               className="mr-1"
                             />
-                            Yuklab olish
+                            {t("partneruniversity.text38")}
                           </button>
                         </div>
                       </div>

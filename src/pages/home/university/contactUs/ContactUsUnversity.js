@@ -3,145 +3,28 @@ import bino1 from "../../img/bino1.jpg";
 import bino2 from "../../img/bino2.jpg";
 import Headers from "../../../header2/Header";
 import Footer from "../../../footer/Footer";
-
+import { useTranslation } from "react-i18next";
 function ContactUsUniversity() {
-  const staffList = [
-    {
-      id: 1,
-      fio: "Barotov Xumoyin Sharifovich",
-      lavozimi:
-        "Yoshlar masalalari va ma‘naviy-ma‘rifiy ishlar bo‘yicha prorektor",
-      telefon: "+998 91 447 05 04",
-    },
-    {
-      id: 2,
-      fio: "Sobirova Dilafruz Abduroziqovna",
-      lavozimi: "Ilmiy ishlar va innovatsiyalar bo‘yicha prorektor",
-      telefon: "+998 91 831 25 11",
-    },
-    {
-      id: 3,
-      fio: "Muxtorov Erkin Mustafoyevich",
-      lavozimi: "O‘quv ishlari bo‘yicha prorektor",
-      telefon: "+998 91 243 17 14",
-    },
-    {
-      id: 4,
-      fio: "Barotov Shuxrat Sharipovich",
-      lavozimi: "Ish boshqaruvchi",
-      telefon: "+998 99 773 17 37",
-    },
-    {
-      id: 5,
-      fio: "Niyazov Fazliddin Sayfitdinovich",
-      lavozimi: "Rektor maslahatchisi",
-      telefon: "+998 90 711 96 97",
-    },
-    {
-      id: 6,
-      fio: "Ochilova Dildora Toshpulatovna",
-      lavozimi: "Reja-moliya bo’limi boshlig’i",
-      telefon: "+998 88 855 20 12",
-    },
-    {
-      id: 7,
-      fio: "Nusratov Farruxmirzo Furqat o’g’li",
-      lavozimi: "Iqtisodchi",
-      telefon: "+998 94 217 11 12",
-    },
-    {
-      id: 8,
-      fio: "Qurbonov O‘ktam Radjabovich",
-      lavozimi: "O‘quv va magistratura bo‘limi boshlig‘i",
-      telefon: "+998 93 809 66 05",
-    },
-    {
-      id: 9,
-      fio: "Haydarov Shahriyor Shuxrat o‘g‘li",
-      lavozimi:
-        "Yoshlar bilan ishlash, ma’naviyat va ma’rifat bo‘limi boshlig'i",
-      telefon: "+998 90 635 96 16",
-    },
-    {
-      id: 10,
-      fio: "Qo’yliyev Ulug’bek Ravshanovich",
-      lavozimi: "Sirtqi bo’lim boshlig’i",
-      telefon: "+998 94 322 57 75",
-    },
-    {
-      id: 11,
-      fio: "Usmonova Surayyo Muxitdinovna",
-      lavozimi:
-        "Ilmiy-tadqiqotlar, innovatsiyalar va ilmiy-pedagogik kadrlar tayyorlash sektori boshlig’i",
-      telefon: "+998 93 651 30 10",
-    },
-    {
-      id: 12,
-      fio: "Jo‘rayev Uchqun Yusuf o‘g‘li",
-      lavozimi: "Registrator ofisi boshlig‘i",
-      telefon: "+998 99 708 78 04",
-    },
-    {
-      id: 13,
-      fio: "Normurodov Olmos Dilshod o‘g‘li",
-      lavozimi: "Ta’lim sifatini nazorat qilish bo’limi boshlig’i o'rinbosari",
-      telefon: "+998 94 025 15 29",
-    },
-    {
-      id: 14,
-      fio: "Karimov Behruz Ibrohimbekovich",
-      lavozimi: "Marketing va talabalar amaliyoti bo‘limi boshlig‘i",
-      telefon: "+998 90 635 56 58",
-    },
-    {
-      id: 15,
-      fio: "Rаxmаtov Nurbek Erkinovich",
-      lavozimi: "Psixologiya va xorijiy tillar fakulteti dekan o‘rinbosari",
-      telefon: "+998 90 710 64 46",
-    },
-    {
-      id: 16,
-      fio: "Xalilov Bekzod Jobir o‘g‘li",
-      lavozimi:
-        "Oliy ta’lim jarayonlarini boshqarish (HEMIS) axborot tizimi mas’ul xodimi",
-      telefon: "+998 94 771 01 24",
-    },
-    {
-      id: 17,
-      fio: "Baratova Dilafruz Sharifovna",
-      lavozimi: "Psixologiya kafedrasi mudiri",
-      telefon: "+998 94 445 36 66",
-    },
-    {
-      id: 18,
-      fio: "Qurbonov Abdujalil Maxmutovich",
-      lavozimi: "Filologiya kafedrasi mudiri",
-      telefon: "+998 93 476 06 75",
-    },
-    {
-      id: 19,
-      fio: "Kurbanov Baxodir Samatovich",
-      lavozimi: "Pedagogika va umumiy fanlar kafedrasi mudiri",
-      telefon: "+998 99 707 36 50",
-    },
-  ];
+  const { t } = useTranslation();
+  const staffList = t("contactUs.staffList", { returnObjects: true });
+
   // Common reception time and day for all staff
   const commonReceptionTime = "15:00 - 17:00";
-  const commonReceptionDay = "Dushanba - Juma";
+  const commonReceptionDay = t("contactUs.days");
   return (
     <div className="bg-gray-50 min-h-screen">
       <div>
         <Headers />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1e3258] leading-tight md:my-8 mt-12">
-            BXU bilan bog'lanish
+            {t("contactUs.title")}
           </h1>
 
           <div className="flex flex-col gap-8 md:flex-row lg:gap-12">
             <ContactCard
               image={bino1}
-              title="Buxoro shahridagi BXU"
-              address="Buxoro shahri Sitorayi Mohi-Xosa MFY G'ijduvon ko'chasi 250-uy"
+              title={t("contactUs.contactCard.title1")}
+              address={t("contactUs.contactCard.address1")}
               phone="+998 55 309-99-99"
               fax="+998 55 309-99-99"
               email="buxpxti@gmail.com"
@@ -149,8 +32,8 @@ function ContactUsUniversity() {
             />
             <ContactCard
               image={bino2}
-              title="Kogon shahridagi BXU"
-              address="Buxoro viloyati Kogon tumani B.Naqshband MFY Abay ko'chasi 20-uy"
+              title={t("contactUs.contactCard.title2")}
+              address={t("contactUs.contactCard.address2")}
               phone="+998 55 305-55-55"
               fax="+998 55 309-99-99"
               email="buxpxti@gmail.com"
@@ -163,29 +46,26 @@ function ContactUsUniversity() {
         {/* Header Section */}
         <div className="text-center mb-10">
           <h1 className="text-3xl sm:text-4xl font-bold text-[#1e3258] mb-4">
-            Buxoro shahridagi BXU rahbariyati va ma'muriyatining qabul jadvali
+            {t("contactUs.header")}
           </h1>
           <div className="w-24 h-1 bg-[#1e3258] mx-auto mb-6"></div>
           <p className="text-gray-600 max-w-3xl mx-auto text-lg">
-            Buxoro shahridagi BXU faoliyati yuzasidan jismoniy va yuridik
-            shaxslarning takliflari va shikoyatlari{" "}
+            {t("contactUs.header1")}
+            {" "}
             <a
               href="mailto:buxpxti@gmail.com"
               className="text-blue-600 hover:underline"
             >
               buxpxti@gmail.com
             </a>{" "}
-            elektron manzili yoki maxsus shakl orqali yuborilishi mumkin.
-            Shuningdek jadvalga binoan, jismoniy va yuridik shaxslar shaxsiy
-            tayinlanish jarayonida universitetning ma'muriyati bilan bog'liq
-            masalalarni muhokama qilishlari mumkin.
+            {t("contactUs.header2")}
           </p>
         </div>
 
         {/* Contact Card */}
         <div className="bg-blue-50 rounded-xl p-6 mb-10 max-w-2xl mx-auto">
           <h4 className="text-xl font-semibold text-[#1e3258] mb-2">
-            Rektor maslahatchisi Niyazov Fazliddin Sayfitdinovich
+            {t("contactUs.header3")}
           </h4>
           <a
             href="tel:+998907119697"
@@ -218,36 +98,38 @@ function ContactUsUniversity() {
                     scope="col"
                     className="px-6 py-3 text-left text-xs md:text-sm font-medium text-white uppercase tracking-wider"
                   >
-                    F.I.SH
+                    {t("contactUs.table_section1")}
                   </th>
                   <th
                     scope="col"
                     className="px-6 py-3 text-left text-xs md:text-sm font-medium text-white uppercase tracking-wider"
                   >
-                    Lavozimi
+                    {t("contactUs.table_section2")}
                   </th>
                   <th
                     scope="col"
                     className="px-6 py-3 text-left text-xs md:text-sm font-medium text-white uppercase tracking-wider"
                   >
-                    Qabul vaqti
+                    {t("contactUs.table_section3")}
                   </th>
                   <th
                     scope="col"
                     className="px-6 py-3 text-left text-xs md:text-sm font-medium text-white uppercase tracking-wider"
                   >
-                    Qabul kuni
+                    {t("contactUs.table_section4")}
                   </th>
                   <th
                     scope="col"
                     className="px-6 py-3 text-left text-xs md:text-sm font-medium text-white uppercase tracking-wider"
                   >
-                    Telefon raqami
+                    {t("contactUs.table_section5")}
                   </th>
                 </tr>
               </thead>
               <tbody className="bg-white divide-y divide-gray-200">
-                {staffList.map((staff) => (
+
+
+                {staffList && staffList.map((staff) => (
                   <tr
                     key={staff.id}
                     className="hover:bg-gray-50 transition-colors"
@@ -296,11 +178,11 @@ function ContactUsUniversity() {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
         <div className="text-center mb-10">
           <h2 className="text-3xl font-bold text-[#1e3258] mb-4">
-            Bizning manzil
+            {t("contactUs.ourAddress")}
           </h2>
           <div className="w-24 h-1 bg-[#1e3258] mx-auto mb-6"></div>
           <p className="text-gray-600 max-w-3xl mx-auto text-lg">
-            Buxoro shahridagi BXU universiteti joylashgan manzil
+            {t("contactUs.ourAddress1")}
           </p>
         </div>
 
@@ -324,8 +206,7 @@ function ContactUsUniversity() {
 
         <div className="mt-8 text-center text-gray-500 text-sm">
           <p>
-            Manzil: Buxoro shahri Sitorayi Mohi-Xosa MFY G'ijduvon ko'chasi
-            250-uy
+          {t("contactUs.ourAddress2")}
           </p>
           <p className="mt-2">
             <a
@@ -334,17 +215,22 @@ function ContactUsUniversity() {
               rel="noopener noreferrer"
               className="text-blue-600 hover:underline"
             >
-              Kattalashtirish uchun Google Maps-da ochish
+              {t("contactUs.ourAddress3")}
             </a>
           </p>
         </div>
       </section>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
 
 function ContactCard({ image, title, address, phone, fax, email, website }) {
+  const { t } = useTranslation();
+  const addressLabel = t("contactUs.contactCard.address_label");
+  const phoneLabel = t("contactUs.contactCard.telefon_label");
+  const faxLabel = t("contactUs.contactCard.fax_label");
+  const websiteLabel = t("contactUs.contactCard.website_label");
   return (
     <div className="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg flex flex-col">
       <img
@@ -357,12 +243,12 @@ function ContactCard({ image, title, address, phone, fax, email, website }) {
           {title}
         </h2>
         <div className="space-y-3 sm:space-y-4 text-sm sm:text-base">
-          <ContactItem label="Manzil" value={address} />
-          <ContactItem label="Telefon" value={phone} />
-          <ContactItem label="Faks" value={fax} />
+          <ContactItem label={addressLabel} value={address} />
+          <ContactItem label={phoneLabel} value={phone} />
+          <ContactItem label={faxLabel} value={fax} />
           <ContactItem label="E-mail" value={email} />
           <ContactItem
-            label="Veb-sayt"
+            label={websiteLabel}
             value={
               <a
                 href={website}

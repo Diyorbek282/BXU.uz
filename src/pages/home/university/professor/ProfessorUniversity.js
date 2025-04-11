@@ -49,8 +49,8 @@ function Proff() {
     };
 
     const partners = [
-        { id: 1, src: proff1, alt: "Partner 1", name: { en: "Baratov Sharif Ramazanovich", ru: "Баратов Шариф Рамазанович", uz: "Баратов Шариф Рамазанович" }, rank: { en: "Doctor of Psychology, Professor", ru: "Доктор психологии, профессор", uz: "Psixologiya fanlari doktori, professor" }},
-        { id: 2, src: proff2, alt: "Partner 2", name: { en: "Baratova Dilafruz Sharifovna", ru: "Баратовa Дилафруз Шарифовна", uz: "Баратова Дилафруз Шарифовна" }, rank: { en: "Doctor of Psychology (DSc), Professor", ru: "Доктор психологии (DSc), профессор", uz: "Psixologiya fanlari doktori(DSc), professor" }},
+        { id: 1, src: proff1, alt: "Partner 1", name: { en: "Baratov Sharif Ramazanovich", ru: "Баратов Шариф Рамазанович", uz: "Baratov Sharif Ramazonovich" }, rank: { en: "Doctor of Psychology, Professor", ru: "Доктор психологии, профессор", uz: "Psixologiya fanlari doktori, professor" }},
+        { id: 2, src: proff2, alt: "Partner 2", name: { en: "Baratova Dilafruz Sharifovna", ru: "Баратовa Дилафруз Шарифовна", uz: "Dilafruz Sharifovna Baratova" }, rank: { en: "Doctor of Psychology (DSc), Professor", ru: "Доктор психологии (DSc), профессор", uz: "Psixologiya fanlari doktori(DSc), professor" }},
         { id: 3, src: proff3, alt: "Partner 3", name: { en: "Sobirova Dilafruz Abduroziqovna", ru: "Собирова Дилафруз Абдуразиковна", uz: "Sobirova Dilafruz Abduroziqovna" }, rank: { en: "Doctor of Psychology (DSc), Professor", ru: "Доктор психологии (DSc), профессор", uz: "Psixologiya fanlari doktori(DSc), professor" }},
         { id: 5, src: proff5, alt: "Partner 5", name: { en: "Qodirov Umarali Do'stqobilovich", ru: "Кодиров Умарали Дӯстқобилович", uz: "Qodirov Umarali Do'stqobilovich" }, rank: { en: "Doctor of Psychology (DSc), Professor", ru: "Доктор психологии (DSc), профессор", uz: "Psixologiya fanlari doktori (DSc), professor" }},
         { id: 6, src: proff6, alt: "Partner 6", name: { en: "Nazarov Akmal Mardonovich", ru: "Назаров Акмал Мардонович", uz: "Nazarov Akmal Mardonovich" }, rank: { en: "Doctor of Psychology (DSc), Professor", ru: "Доктор психологии (DSc), профессор", uz: "Psixologiya fanlari doktori (DSc), professor" }},
@@ -117,7 +117,7 @@ function Proff() {
                         <div className="w-full xl:w-2/3 p-2">
                             <div className="my-12">
                                 <h2 className="text-3xl font-bold text-blue-800 mb-8 text-center">
-                                    Professor o'qituvchilar jamoasi
+                                    {t("rektorat.group")}
                                 </h2>
 
                                 {/* Professors Grid */}

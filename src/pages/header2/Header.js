@@ -77,109 +77,42 @@ function Header(props) {
           />
         </Link>
         <div className="flex items-center gap-4">
-          <ul className="">
-            <li className=" relative">
-              <button
-                id="dropdown1Link"
-                data-dropdown-toggle="dropdown1"
-                className="flex items-center text-black justify-evenly !gap-0 w-full py-2 hover:text-blue-800 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+          <ul className="flex gap-8 border-r-2 border-r-slate-400 pr-6">
+            <li>
+              <a
+                className="no-underline text-[#0088cc] text-2xl font-semibold"
+                href="https://t.me/bxu_uz"
+                target="_blank"
               >
-                Bakalavriat
-                <RiArrowDropDownLine className="w-7 h-7 ms-2.5 m-0" />
-              </button>
-              <div
-                id="dropdown1"
-                className="z-30 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600 absolute"
-              >
-                {/*<ul id='menyucha' className="py-2 text-sm text-gray-700 dark:text-gray-200"*/}
-                {/*    aria-labelledby="dropdown1Link">*/}
-                {/*    /!*<li id='ota-ul'>*!/*/}
-                {/*    /!*    <a id='ota-ul'*!/*/}
-                {/*    /!*       href={"https://buxpxti.uz/wp-content/uploads/2024/08/Buxoro-psixologiya-va-xorijiy-tillar-institutining-PASPORTI.pdf"}*!/*/}
-                {/*    /!*       target="_blank" rel="noopener noreferrer"*!/*/}
-                {/*    /!*       className="block px-2 py-2 hover:text-white dark:hover:bg-gray-600 dark:hover:text-white">*!/*/}
-                {/*    /!*        Institut haqida*!/*/}
-                {/*    /!*    </a>*!/*/}
-                {/*    /!*</li>*!/*/}
-                {/*    <li id='ota-ul'>*/}
-                {/*      <Link to={"/welcome"}*/}
-                {/*            className="block px-2 py-1 hover:text-blue-900 dark:hover:bg-blue-200 dark:hover:text-blue-900">*/}
-                {/*            {t('navbar.nav_item1')}*/}
-                {/*        </Link>*/}
-                {/*    </li>*/}
-
-                {/*</ul>*/}
-              </div>
+                <i class="fa-brands fa-telegram"></i> 
+              </a>
             </li>
-          </ul>
-          <ul className="">
-            <li className=" relative">
-              <button
-                id="dropdown1Link"
-                data-dropdown-toggle="dropdown1"
-                className="flex items-center text-black justify-evenly !gap-0 w-full py-2 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+            <li>
+              <a
+                className="no-underline font-semibold text-2xl text-transparent bg-gradient-to-r from-pink-500 via-yellow-500 to-indigo-500 bg-clip-text"
+                href="https://www.instagram.com/bxu.uz"
+                target="_blank"
               >
-                Magistratura
-                <RiArrowDropDownLine className="w-7 h-7 ms-2.5 m-0" />
-              </button>
-              <div
-                id="dropdown1"
-                className="z-30 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600 absolute"
-              >
-                {/*<ul id='menyucha' className="py-2 text-sm text-gray-700 dark:text-gray-200"*/}
-                {/*    aria-labelledby="dropdown1Link">*/}
-                {/*    /!*<li id='ota-ul'>*!/*/}
-                {/*    /!*    <a id='ota-ul'*!/*/}
-                {/*    /!*       href={"https://buxpxti.uz/wp-content/uploads/2024/08/Buxoro-psixologiya-va-xorijiy-tillar-institutining-PASPORTI.pdf"}*!/*/}
-                {/*    /!*       target="_blank" rel="noopener noreferrer"*!/*/}
-                {/*    /!*       className="block px-2 py-2 hover:text-white dark:hover:bg-gray-600 dark:hover:text-white">*!/*/}
-                {/*    /!*        Institut haqida*!/*/}
-                {/*    /!*    </a>*!/*/}
-                {/*    /!*</li>*!/*/}
-                {/*    <li id='ota-ul'>*/}
-                {/*      <Link to={"/welcome"}*/}
-                {/*            className="block px-2 py-1 hover:text-blue-900 dark:hover:bg-blue-200 dark:hover:text-blue-900">*/}
-                {/*            {t('navbar.nav_item1')}*/}
-                {/*        </Link>*/}
-                {/*    </li>*/}
-
-                {/*</ul>*/}
-              </div>
+                <i class="fa-brands fa-square-instagram"></i> 
+              </a>
             </li>
-          </ul>
-          <ul className="border-r-gray-300 border-r-2">
-            <li className=" relative">
-              <button
-                id="dropdown1Link"
-                data-dropdown-toggle="dropdown1"
-                className="flex items-center text-black justify-evenly !gap-0 w-full py-2 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+            <li>
+              <a
+                className="no-underline font-semibold text-2xl text-[#1877F2]"
+                href="https://www.facebook.com/share/16Cvb6AEEv/"
+                target="_blank"
               >
-                Doktorantura
-                <RiArrowDropDownLine className="w-7 h-7 ms-2.5 m-0" />
-              </button>
-              <div
-                id="dropdown1"
-                className="z-30 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600 absolute"
+                <i class="fa-brands fa-square-facebook"></i> 
+              </a>
+            </li>
+            <li>
+              <a
+                className="no-underline font-semibold text-2xl text-[#FF0000]"
+                href="https://youtube.com/@bxu_uz"
+                target="_blank"
               >
-                {/*<ul id='menyucha' className="py-2 w-sm text-sm text-gray-700 dark:text-gray-200"*/}
-                {/*    aria-labelledby="dropdown1Link">*/}
-                {/*    /!*<li id='ota-ul'>*!/*/}
-                {/*    /!*    <a id='ota-ul'*!/*/}
-                {/*    /!*       href={"https://buxpxti.uz/wp-content/uploads/2024/08/Buxoro-psixologiya-va-xorijiy-tillar-institutining-PASPORTI.pdf"}*!/*/}
-                {/*    /!*       target="_blank" rel="noopener noreferrer"*!/*/}
-                {/*    /!*       className="block px-2 py-2 hover:text-white dark:hover:bg-gray-600 dark:hover:text-white">*!/*/}
-                {/*    /!*        Institut haqida*!/*/}
-                {/*    /!*    </a>*!/*/}
-                {/*    /!*</li>*!/*/}
-                {/*    <li id='ota-ul'>*/}
-                {/*      <Link to={"/welcome"}*/}
-                {/*            className="block px-2 py-1 hover:text-blue-900 dark:hover:bg-blue-200 dark:hover:text-blue-900">*/}
-                {/*            {t('navbar.nav_item1')}*/}
-                {/*        </Link>*/}
-                {/*    </li>*/}
-
-                {/*</ul>*/}
-              </div>
+                <i class="fa-brands fa-youtube"></i> 
+              </a>
             </li>
           </ul>
           <button
@@ -188,7 +121,7 @@ function Header(props) {
             }
             className="py-2 px-8 bg-blue-800 hover:bg-blue-400 text-white rounded-xl text-xl font-semibold shadow-lg animate-pulse hover:animate-none hover:shadow-blue-500/50 transition-all duration-300"
           >
-            Qabul 2025
+            {t("navbar.btn")}
           </button>
         </div>
       </div>
@@ -255,7 +188,7 @@ function Header(props) {
                         <li id="ota-ul">
                           <Link
                             to={"/university/about"}
-                            className="block px-2 decoration-0  hover:text-white text-black  rounded-1 py-1  dark:hover:bg-blue-300 dark:hover:text-white "
+                            className="block px-2 py-1 decoration-0 no-underline  hover:text-white text-black rounded-1 dark:hover:bg-blue-600 dark:hover:text-white "
                           >
                             {t("university.about.title")}
                           </Link>
@@ -269,28 +202,28 @@ function Header(props) {
                         <li id="ota-ul">
                           <Link
                             to={"/university/aim"}
-                            className="block px-2 py-1 decoration-0   hover:text-white text-black rounded-1  dark:hover:bg-blue-300 dark:hover:text-white"
+                            className="block px-2 py-1 decoration-0 no-underline  hover:text-white text-black rounded-1 dark:hover:bg-blue-600 dark:hover:text-white"
                           >
                             {t("university.about.goals")}
                           </Link>
                         </li>
                         {/*<li id='ota-ul'>*/}
                         {/*    <Link to={"/university/quality"}*/}
-                        {/*          className="block px-2 py-1 decoration-0   hover:text-white text-black rounded-1  dark:hover:bg-blue-300 dark:hover:text-white">*/}
+                        {/*          className="block px-2 py-1 decoration-0 no-underline  hover:text-white text-black rounded-1 dark:hover:bg-blue-600 dark:hover:text-white">*/}
                         {/*        {t('university.about.qualitySystem')}*/}
                         {/*    </Link>*/}
                         {/*</li>*/}
                         <li id="ota-ul">
                           <Link
                             to={"/university/numbers"}
-                            className="block px-2 py-1 decoration-0   hover:text-white text-black rounded-1 dark:hover:bg-blue-300 dark:hover:text-white"
+                            className="block px-2 py-1 decoration-0 no-underline  hover:text-white text-black rounded-1 dark:hover:bg-blue-600 dark:hover:text-white"
                           >
                             {t("university.about.facts")}
                           </Link>
                         </li>
                         {/*<li id='ota-ul'>*/}
                         {/*    <Link to={"/university/morality"}*/}
-                        {/*          className="block px-2 py-1 decoration-0   hover:text-white text-black rounded-1 dark:hover:bg-blue-300 dark:hover:text-white">*/}
+                        {/*          className="block px-2 py-1 decoration-0 no-underline  hover:text-white text-black rounded-1 dark:hover:bg-blue-600 dark:hover:text-white">*/}
                         {/*        {t('university.about.codeOfConduct')}*/}
                         {/*    </Link>*/}
                         {/*</li>*/}
@@ -298,7 +231,7 @@ function Header(props) {
                         <li id="ota-ul">
                           <Link
                             to={"/university/directions"}
-                            className="block px-2 py-1 decoration-0   hover:text-white text-black rounded-1 dark:hover:bg-blue-300 dark:hover:text-white"
+                            className="block px-2 py-1 decoration-0 no-underline  hover:text-white text-black rounded-1 dark:hover:bg-blue-600 dark:hover:text-white"
                           >
                             {t("university.about.directions")}
                           </Link>
@@ -306,9 +239,16 @@ function Header(props) {
                         <li id="ota-ul">
                           <Link
                             to={"/university/partnership"}
-                            className="block px-2 py-1 decoration-0   hover:text-white text-black rounded-1 dark:hover:bg-blue-300 dark:hover:text-white"
+                            className="block px-2 py-1 decoration-0 no-underline  hover:text-white text-black rounded-1 dark:hover:bg-blue-600 dark:hover:text-white"
                           >
                             {t("university.about.partnership")}
+                          </Link>
+                          <Link
+                              to="/university/scientificactivity"
+                              onClick={toggleDrawer}
+                              className="block px-2 py-1 decoration-0 no-underline  hover:text-white text-black rounded-1 dark:hover:bg-blue-600 dark:hover:text-white"
+                          >
+                            {t("university.about.scientificactivity")}
                           </Link>
                         </li>
                       </ul>
@@ -330,7 +270,7 @@ function Header(props) {
                         <li id="ota-ul">
                           <Link
                             to={"/university/rector"}
-                            className="block px-2 decoration-0  hover:text-white text-black rounded-1 py-1 dark:hover:bg-blue-300 dark:hover:text-white "
+                            className="block px-2 decoration-0 no-underline  hover:text-white text-black rounded-1 py-1 dark:hover:bg-blue-300 dark:hover:text-white "
                           >
                             {t("university.rectorOffice.rector")}
                           </Link>
@@ -547,7 +487,7 @@ function Header(props) {
                   rel="noopener noreferrer"
                   className="block px-2 py-1 no-underline font-semibold text-white hover:text-blue-500 shadow-lg animate-pulse hover:animate-none hover:shadow-blue-500/50 transition-all duration-250"
                 >
-                  QABUL 2025
+                  {t("navbar.btn")}
                 </a>
               </li>
 
@@ -628,7 +568,7 @@ function Header(props) {
                         to={"/newspaper/hamkor-jurnallar"}
                         className="block px-2 decoration-0  hover:text-white text-black py-1 rounded-1 dark:hover:bg-blue-300 dark:hover:text-white"
                       >
-                        Hamkor jurnallar
+                        {t("navbar.nav_item12")}
                       </Link>
                     </li>
                     <li id="ota-ul">
@@ -636,7 +576,7 @@ function Header(props) {
                         to={"/newspaper/ilmiy-axborotnomalar"}
                         className="block px-2 decoration-0  hover:text-white text-black py-1 rounded-1 dark:hover:bg-blue-300 dark:hover:text-white"
                       >
-                        Ilmiy axborotnomalar
+                        {t("navbar.nav_item13")}
                       </Link>
                     </li>
                   </ul>
@@ -662,10 +602,11 @@ function Header(props) {
                   {t("navbar.nav_item_title5")}
                 </Link>
               </li>
+             
             </ul>
           </div>
 
-          <div className="flex items-center gap-x-3 mr-2">
+          <div className="flex items-center mr-2">
             <div className="flex items-start lg:hidden">
               <button
                 onClick={toggleDrawer}
@@ -675,7 +616,7 @@ function Header(props) {
               </button>
             </div>
             {/*language button*/}
-            <ul className="relative ">
+            <ul className="relative lang1 ">
               <li className="relative group">
                 {/* Кнопка для выбора языка с флагом */}
                 <button className="flex items-center text-white justify-evenly !gap-0 w-full py-2 hover:text-blue-800 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
@@ -833,37 +774,44 @@ function Header(props) {
                     <Link
                       to="/university/about"
                       onClick={toggleDrawer}
-                      className="block p-2 text-black hover:bg-blue-500 rounded"
+                      className="block px-2 py-1 decoration-0 no-underline  hover:text-white text-black rounded-1 dark:hover:bg-blue-600 dark:hover:text-white"
                     >
                       {t("university.about.title")}
                     </Link>
                     <Link
                       to="/university/aim"
                       onClick={toggleDrawer}
-                      className="block p-2 text-black hover:bg-blue-500 rounded"
+                      className="block px-2 py-1 decoration-0 no-underline  hover:text-white text-black rounded-1 dark:hover:bg-blue-600 dark:hover:text-white"
                     >
                       {t("university.about.goals")}
                     </Link>
                     <Link
                       to="/university/numbers"
                       onClick={toggleDrawer}
-                      className="block p-2 text-black hover:bg-blue-500 rounded"
+                      className="block px-2 py-1 decoration-0 no-underline  hover:text-white text-black rounded-1 dark:hover:bg-blue-600 dark:hover:text-white"
                     >
                       {t("university.about.facts")}
                     </Link>
                     <Link
                       to="/university/directions"
                       onClick={toggleDrawer}
-                      className="block p-2 text-black hover:bg-blue-500 rounded"
+                      className="block px-2 py-1 decoration-0 no-underline  hover:text-white text-black rounded-1 dark:hover:bg-blue-600 dark:hover:text-white"
                     >
                       {t("university.about.directions")}
                     </Link>
                     <Link
                       to="/university/partnership"
                       onClick={toggleDrawer}
-                      className="block p-2 text-black hover:bg-blue-500 rounded"
+                      className="block px-2 py-1 decoration-0 no-underline  hover:text-white text-black rounded-1 dark:hover:bg-blue-600 dark:hover:text-white"
                     >
                       {t("university.about.partnership")}
+                    </Link>
+                    <Link
+                      to="/university/scientificactivity"
+                      onClick={toggleDrawer}
+                      className="block px-2 py-1 decoration-0 no-underline  hover:text-white text-black rounded-1 dark:hover:bg-blue-600 dark:hover:text-white"
+                    >
+                      {t("university.about.scientificactivity")}
                     </Link>
                   </div>
                 </div>
@@ -892,7 +840,7 @@ function Header(props) {
                     <Link
                       to="/university/prorector"
                       onClick={toggleDrawer}
-                      className="block p-2 text-black hover:bg-blue-500 rounded"
+                      className="block px-2 py-1 decoration-0 no-underline  hover:text-white text-black rounded-1 dark:hover:bg-blue-600 dark:hover:text-white"
                     >
                       {t("university.rectorOffice.viceRectors")}
                     </Link>
@@ -916,35 +864,35 @@ function Header(props) {
                     <Link
                       to="/university/campuses"
                       onClick={toggleDrawer}
-                      className="block p-2 text-black hover:bg-blue-500 rounded"
+                      className="block px-2 py-1 decoration-0 no-underline  hover:text-white text-black rounded-1 dark:hover:bg-blue-600 dark:hover:text-white"
                     >
                       {t("university.infrastructure.buildings")}
                     </Link>
                     <Link
                       to="/university/dormitory"
                       onClick={toggleDrawer}
-                      className="block p-2 text-black hover:bg-blue-500 rounded"
+                      className="block px-2 py-1 decoration-0 no-underline  hover:text-white text-black rounded-1 dark:hover:bg-blue-600 dark:hover:text-white"
                     >
                       {t("university.infrastructure.dormitory")}
                     </Link>
                     <Link
                       to="/university/conference-hall"
                       onClick={toggleDrawer}
-                      className="block p-2 text-black hover:bg-blue-500 rounded"
+                      className="block px-2 py-1 decoration-0 no-underline  hover:text-white text-black rounded-1 dark:hover:bg-blue-600 dark:hover:text-white"
                     >
                       {t("university.infrastructure.conferenceHall")}
                     </Link>
                     <Link
                       to="/university/classrooms"
                       onClick={toggleDrawer}
-                      className="block p-2 text-black hover:bg-blue-500 rounded"
+                      className="block px-2 py-1 decoration-0 no-underline  hover:text-white text-black rounded-1 dark:hover:bg-blue-600 dark:hover:text-white"
                     >
                       {t("university.infrastructure.classrooms")}
                     </Link>
                     <Link
                       to="/university/research-centers"
                       onClick={toggleDrawer}
-                      className="block p-2 text-black hover:bg-blue-500 rounded"
+                      className="block px-2 py-1 decoration-0 no-underline  hover:text-white text-black rounded-1 dark:hover:bg-blue-600 dark:hover:text-white"
                     >
                       {t("university.infrastructure.researchCenters")}
                     </Link>
@@ -968,14 +916,14 @@ function Header(props) {
                     <Link
                       to="/university/head"
                       onClick={toggleDrawer}
-                      className="block p-2 text-black hover:bg-blue-500 rounded"
+                      className="block px-2 py-1 decoration-0 no-underline  hover:text-white text-black rounded-1 dark:hover:bg-blue-600 dark:hover:text-white"
                     >
                       {t("university.rectorOffice.departmentHeads")}
                     </Link>
                     <Link
                       to="/university/professors"
                       onClick={toggleDrawer}
-                      className="block p-2 text-black hover:bg-blue-500 rounded"
+                      className="block px-2 py-1 decoration-0 no-underline  hover:text-white text-black rounded-1 dark:hover:bg-blue-600 dark:hover:text-white"
                     >
                       {t("university.rectorOffice.professors")}
                     </Link>
@@ -1001,14 +949,14 @@ function Header(props) {
                 <Link
                   to="/university/association"
                   onClick={toggleDrawer}
-                  className="block p-2 text-black hover:bg-blue-500 rounded"
+                  className="block px-2 py-1 decoration-0 no-underline  hover:text-white text-black rounded-1 dark:hover:bg-blue-600 dark:hover:text-white"
                 >
                   {t("university.students.association")}
                 </Link>
                 <Link
                   to="/university/support"
                   onClick={toggleDrawer}
-                  className="block p-2 text-black hover:bg-blue-500 rounded"
+                  className="block px-2 py-1 decoration-0 no-underline  hover:text-white text-black rounded-1 dark:hover:bg-blue-600 dark:hover:text-white"
                 >
                   {t("university.students.support")}
                 </Link>
@@ -1016,7 +964,7 @@ function Header(props) {
                   href="https://library.buxpxti.uz"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block p-2 text-black hover:bg-blue-500 rounded"
+                  className="block px-2 py-1 decoration-0 no-underline  hover:text-white text-black rounded-1 dark:hover:bg-blue-600 dark:hover:text-white"
                   onClick={toggleDrawer}
                 >
                   {t("university.students.library")}
@@ -1024,28 +972,28 @@ function Header(props) {
                 <Link
                   to="/university/dormitory"
                   onClick={toggleDrawer}
-                  className="block p-2 text-black hover:bg-blue-500 rounded"
+                  className="block px-2 py-1 decoration-0 no-underline  hover:text-white text-black rounded-1 dark:hover:bg-blue-600 dark:hover:text-white"
                 >
                   {t("university.students.dormitory")}
                 </Link>
                 <Link
                   to="/university/timetable"
                   onClick={toggleDrawer}
-                  className="block p-2 text-black hover:bg-blue-500 rounded"
+                  className="block px-2 py-1 decoration-0 no-underline  hover:text-white text-black rounded-1 dark:hover:bg-blue-600 dark:hover:text-white"
                 >
                   {t("university.students.timetable")}
                 </Link>
                 <Link
                   to="/university/successful"
                   onClick={toggleDrawer}
-                  className="block p-2 text-black hover:bg-blue-500 rounded"
+                  className="block px-2 py-1 decoration-0 no-underline  hover:text-white text-black rounded-1 dark:hover:bg-blue-600 dark:hover:text-white"
                 >
                   {t("university.students.successful")}
                 </Link>
                 <Link
                   to="/university/distance"
                   onClick={toggleDrawer}
-                  className="block p-2 text-black hover:bg-blue-500 rounded"
+                  className="block px-2 py-1 decoration-0 no-underline  hover:text-white text-black rounded-1 dark:hover:bg-blue-600 dark:hover:text-white"
                 >
                   {t("university.students.distance")}
                 </Link>
@@ -1069,14 +1017,14 @@ function Header(props) {
                 <Link
                   to="/all-news"
                   onClick={toggleDrawer}
-                  className="block p-2 text-black hover:bg-blue-500 rounded"
+                  className="block px-2 py-1 decoration-0 no-underline  hover:text-white text-black rounded-1 dark:hover:bg-blue-600 dark:hover:text-white"
                 >
                   {t("navbar.nav_item9")}
                 </Link>
                 <Link
                   to="/all-images"
                   onClick={toggleDrawer}
-                  className="block p-2 text-black hover:bg-blue-500 rounded"
+                  className="block px-2 py-1 decoration-0 no-underline  hover:text-white text-black rounded-1 dark:hover:bg-blue-600 dark:hover:text-white"
                 >
                   {t("navbar.nav_item10")}
                 </Link>
@@ -1103,14 +1051,14 @@ function Header(props) {
                 <Link
                   to="/newspaper/hamkor-jurnallar"
                   onClick={toggleDrawer}
-                  className="block p-2 text-black hover:bg-blue-500 rounded"
+                  className="block px-2 py-1 decoration-0 no-underline  hover:text-white text-black rounded-1 dark:hover:bg-blue-600 dark:hover:text-white"
                 >
                   Hamkor jurnallar
                 </Link>
                 <Link
                   to="/newspaper/ilmiy-axborotnomalar"
                   onClick={toggleDrawer}
-                  className="block p-2 text-black hover:bg-blue-500 rounded"
+                  className="block px-2 py-1 decoration-0 no-underline  hover:text-white text-black rounded-1 dark:hover:bg-blue-600 dark:hover:text-white"
                 >
                   Ilmiy axborotnomalar
                 </Link>
@@ -1122,7 +1070,7 @@ function Header(props) {
               href="https://library.buxpxti.uz"
               target="_blank"
               rel="noopener noreferrer"
-              className="block p-3 bg-blue-700 text-white rounded-lg hover:bg-blue-600"
+              className="block px-2 py-1 decoration-0 no-underline  hover:text-white text-black rounded-1 dark:hover:bg-blue-600 dark:hover:text-white"
               onClick={toggleDrawer}
             >
               {t("navbar.nav_item_title3")}
@@ -1131,7 +1079,7 @@ function Header(props) {
             {/* Contact Link */}
             <Link
               to="/university/contact"
-              className="block p-3 bg-blue-700 text-white rounded-lg hover:bg-blue-600"
+              className="block px-2 py-1 decoration-0 no-underline  hover:text-white text-black rounded-1 dark:hover:bg-blue-600 dark:hover:text-white"
               onClick={toggleDrawer}
             >
               {t("navbar.nav_item_title5")}
@@ -1145,7 +1093,7 @@ function Header(props) {
               className="block p-3 bg-gradient-to-r from-blue-600 to-blue-500 text-white font-bold text-center rounded-lg shadow-lg hover:from-blue-500 hover:to-blue-400 transition-all duration-300"
               onClick={toggleDrawer}
             >
-              QABUL 2025
+              {t("navbar.btn")}
             </a>
           </div>
         </div>

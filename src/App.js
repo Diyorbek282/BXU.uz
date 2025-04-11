@@ -82,6 +82,9 @@ import AssociationStudent from "./pages/home/university/association/AssociationS
 import Support from "./pages/home/university/support/Support";
 import Distance from "./pages/home/university/distance/Distance";
 import EcoZone from "./pages/home/university/ecozone/EcoZone";
+import ScientificActivity from "./pages/home/university/scientificactivity/ScientificActivity";
+import UniversityAbout from "./pages/home/university/unversityAbout/UniversityAbout";
+
 
 function App() {
   const { t } = useTranslation();
@@ -201,6 +204,8 @@ function App() {
         <Route path={"/university/dormitory"} element={<Dormitory />} />
         <Route path={"/university/distance"} element={<Distance />} />
         <Route path={"/university/ecozone"} element={<EcoZone />} />
+        <Route path={"/university/scientificactivity"} element={<ScientificActivity />} />
+        <Route path={"/university/info"} element={<UniversityAbout/>} />
 
         {/*  app admins */}
 

@@ -5,8 +5,10 @@ import dorm1 from "./image1.png";
 import dorm2 from "./image2.png";
 import dorm3 from "./image3.png";
 import dorm4 from "./image4.png";
+import { useTranslation } from "react-i18next";
 
 function Dormitory() {
+  const { t } = useTranslation();
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
       <Header />
@@ -16,30 +18,27 @@ function Dormitory() {
           {/* Main Content Section */}
           <div className="bg-white p-6 md:p-8 rounded-xl shadow-lg mb-8 border border-gray-100">
             <h1 className="text-2xl md:text-3xl font-bold text-center text-blue-800 mb-6">
-              BUXORO XALQARO UNIVERSITETI TALABALAR TURAR JOYI
+              {t("dormitory.title")}
             </h1>
             <p className="text-gray-700 text-lg leading-relaxed mb-4">
-              Universitetimizda talabalar uchun qulay va zamonaviy turar joylar
-              taqdim etiladi. Turar joy binolarida barcha qulayliklar yaratilgan
-              bo'lib, talabalarimiz xavfsiz va qulay sharoitda yashashlari uchun
-              barcha shart-sharoitlar mavjud.
+              {t("dormitory.description")}
             </p>
             <ul className="space-y-3 text-gray-700">
               <li className="flex items-start">
                 <span className="text-blue-500 mr-2">•</span>
-                <span>Har bir xonada 2-3 kishi uchun joy</span>
+                <span>{t("dormitory.list1")}</span>
               </li>
               <li className="flex items-start">
                 <span className="text-blue-500 mr-2">•</span>
-                <span>Oshxona va yuvinish xonalari</span>
+                <span>{t("dormitory.list2")}</span>
               </li>
               <li className="flex items-start">
                 <span className="text-blue-500 mr-2">•</span>
-                <span>24/7 xavfsizlik va WiFi tarmog'i</span>
+                <span>{t("dormitory.list3")}</span>
               </li>
               <li className="flex items-start">
                 <span className="text-blue-500 mr-2">•</span>
-                <span>O'qish va dam olish zallari</span>
+                <span>{t("dormitory.list4")}</span>
               </li>
             </ul>
           </div>
@@ -54,7 +53,7 @@ function Dormitory() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent flex items-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <span className="text-white font-medium">
-                  Turar joy binosi tashqi ko'rinishi
+                  {t("dormitory.joy1")}
                 </span>
               </div>
             </div>
@@ -67,7 +66,7 @@ function Dormitory() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent flex items-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <span className="text-white font-medium">
-                  Qulay yotoq xonalari
+                  {t("dormitory.joy2")}
                 </span>
               </div>
             </div>
@@ -80,7 +79,7 @@ function Dormitory() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent flex items-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <span className="text-white font-medium">
-                  O'qish uchun maxsus joy
+                  {t("dormitory.joy3")}
                 </span>
               </div>
             </div>
@@ -92,7 +91,9 @@ function Dormitory() {
                 className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent flex items-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <span className="text-white font-medium">Dam olish zali</span>
+                <span className="text-white font-medium">
+                  {t("dormitory.joy4")}
+                </span>
               </div>
             </div>
           </div>
@@ -100,24 +101,32 @@ function Dormitory() {
           {/* Additional Info */}
           <div className="bg-blue-50 rounded-xl p-6 md:p-8 mt-8">
             <h2 className="text-xl md:text-2xl font-bold text-blue-800 mb-4">
-              Turar joy qoidalari:
+              {t("dormitory.rules")}
             </h2>
             <ul className="space-y-2 text-gray-700">
               <li className="flex items-start">
                 <span className="text-blue-500 mr-2">•</span>
-                <span>Har bir talaba toza va tartibli bo'lishi shart</span>
+                <span>
+                  {t("dormitory.rule1")}
+                </span>
               </li>
               <li className="flex items-start">
                 <span className="text-blue-500 mr-2">•</span>
-                <span>23:00 dan keyin shovqin qilish taqiqlanadi</span>
+                <span>
+                  {t("dormitory.rule2")}
+                </span>
               </li>
               <li className="flex items-start">
                 <span className="text-blue-500 mr-2">•</span>
-                <span>Mehmonlarni ro'yxatdan o'tkazish majburiy</span>
+                <span>
+                  {t("dormitory.rule3")}
+                </span>
               </li>
               <li className="flex items-start">
                 <span className="text-blue-500 mr-2">•</span>
-                <span>Oylik to'lovlar vaqtida amalga oshirilishi kerak</span>
+                <span>
+                  {t("dormitory.rule4")}
+                </span>
               </li>
             </ul>
           </div>
