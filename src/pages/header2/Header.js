@@ -84,7 +84,7 @@ function Header(props) {
                 href="https://t.me/bxu_uz"
                 target="_blank"
               >
-                <i class="fa-brands fa-telegram"></i> 
+                <i class="fa-brands fa-telegram"></i>
               </a>
             </li>
             <li>
@@ -93,7 +93,7 @@ function Header(props) {
                 href="https://www.instagram.com/bxu.uz"
                 target="_blank"
               >
-                <i class="fa-brands fa-square-instagram"></i> 
+                <i class="fa-brands fa-square-instagram"></i>
               </a>
             </li>
             <li>
@@ -102,7 +102,7 @@ function Header(props) {
                 href="https://www.facebook.com/share/16Cvb6AEEv/"
                 target="_blank"
               >
-                <i class="fa-brands fa-square-facebook"></i> 
+                <i class="fa-brands fa-square-facebook"></i>
               </a>
             </li>
             <li>
@@ -111,7 +111,7 @@ function Header(props) {
                 href="https://youtube.com/@bxu_uz"
                 target="_blank"
               >
-                <i class="fa-brands fa-youtube"></i> 
+                <i class="fa-brands fa-youtube"></i>
               </a>
             </li>
           </ul>
@@ -244,9 +244,9 @@ function Header(props) {
                             {t("university.about.partnership")}
                           </Link>
                           <Link
-                              to="/university/scientificactivity"
-                              onClick={toggleDrawer}
-                              className="block px-2 py-1 decoration-0 no-underline  hover:text-white text-black rounded-1 dark:hover:bg-blue-600 dark:hover:text-white"
+                            to="/university/scientificactivity"
+                            onClick={toggleDrawer}
+                            className="block px-2 py-1 decoration-0 no-underline  hover:text-white text-black rounded-1 dark:hover:bg-blue-600 dark:hover:text-white"
                           >
                             {t("university.about.scientificactivity")}
                           </Link>
@@ -602,7 +602,6 @@ function Header(props) {
                   {t("navbar.nav_item_title5")}
                 </Link>
               </li>
-             
             </ul>
           </div>
 
